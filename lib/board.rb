@@ -32,8 +32,7 @@ position(input)=="X" || position(input)=="O"
 end
 
 def valid_move?(input)
-
-
+input.to_i 
 end
 end
 
