@@ -31,7 +31,11 @@ def taken?(input)
 position(input)=="X" || position(input)=="O"
 end
 
-def valid_move?
+def valid_move?(input)
+
+
+end
+end
 
 def full?
 cells.all? do |character| 
