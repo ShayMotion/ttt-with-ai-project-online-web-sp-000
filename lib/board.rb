@@ -36,6 +36,10 @@ input.to_i.between?(1,9) && !taken?(input)
 end
 end
 
+def update(input, player)
+cells[input.to_i-1]
+end
+
 def full?
 cells.all? do |character| 
 if character == "X" || character == "O"}
