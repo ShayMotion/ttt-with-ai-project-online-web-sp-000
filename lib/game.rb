@@ -11,5 +11,14 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 
-def initialize(player_1 = Players, player_2)
+def initialize(player_1 = Players, player_2 = Players::Human.new("O"), board = board.new)
+  @board = board
+  @player_1 = player_1
+  @player_2 = player_2
+end
+
+def current_player
+  @board.turn_count
+end
+
 end
