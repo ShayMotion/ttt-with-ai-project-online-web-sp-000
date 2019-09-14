@@ -32,4 +32,5 @@ def won?
 end
 
 def draw?
+  @board.full? && !won?
 end
