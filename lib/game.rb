@@ -11,5 +11,5 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 
-def initialize(player_1, player_2)
+def initialize(player_1 = Players, player_2)
 end
