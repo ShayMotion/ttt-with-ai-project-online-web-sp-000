@@ -18,7 +18,15 @@ def initialize(player_1 = Players, player_2 = Players::Human.new("O"), board = b
 end
 
 def current_player
-  @board.turn_count
+  @board.turn_count % 2 == 0 ? player_1 : player_2
 end
 
+def over?
+  won? || draw?
+end
+
+def won?
+end
+
+def draw?
 end
